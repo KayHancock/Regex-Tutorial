@@ -1,10 +1,16 @@
 # Title (replace with your title)
 
-Introductory paragraph (replace this with your text)
+This is a tutorial about using the ReExp.prototype.exec() regex method. Its purpose is to inform, educate, and excite you about the exec() method.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The exec() method searches strings and returns either an array or null value. Some sample code:
+const regex1 = RegExp('foo\*', 'g');
+const str1 = 'fishing, swimming';
+let array1;
+
+while ((array1 = regex1.exec(str1)) !== null) {
+console.log(`Found ${array1[0]}. Next starts at ${regex1.lastIndex}.`);
 
 ## Table of Contents
 
@@ -18,6 +24,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
+
+The exec() method just requires a string to be input.
 
 ### Anchors
 
@@ -37,4 +45,5 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial was written by Kayla Hancock who can be found at:
+https://github.com/KayHancock
